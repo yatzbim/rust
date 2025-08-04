@@ -14,7 +14,6 @@ fn no_escaping() {
 }
 
 #[test]
-#[ignore]
 fn quote() {
     let mut builder = CsvRecordBuilder::new();
 
@@ -27,7 +26,6 @@ fn quote() {
 }
 
 #[test]
-#[ignore]
 fn new_line() {
     let mut builder = CsvRecordBuilder::new();
 
@@ -38,7 +36,6 @@ fn new_line() {
     assert_eq!("ant,\"ba\nt\"", &list);
 }
 #[test]
-#[ignore]
 fn comma() {
     let mut builder = CsvRecordBuilder::new();
 
@@ -50,7 +47,6 @@ fn comma() {
 }
 
 #[test]
-#[ignore]
 fn empty() {
     let builder = CsvRecordBuilder::new();
     let list = builder.build();
