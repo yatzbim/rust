@@ -17,41 +17,49 @@ fn production_rate_per_hour_at_speed_zero() {
 }
 
 #[test]
+#[ignore]
 fn production_rate_per_hour_at_speed_one() {
     process_rate_per_hour(1, 221.0);
 }
 
 #[test]
+#[ignore]
 fn production_rate_per_hour_at_speed_four() {
     process_rate_per_hour(4, 884.0);
 }
 
 #[test]
+#[ignore]
 fn production_rate_per_hour_at_speed_seven() {
     process_rate_per_hour(7, 1392.3);
 }
 
 #[test]
+#[ignore]
 fn production_rate_per_hour_at_speed_nine() {
     process_rate_per_hour(9, 1531.53);
 }
 
 #[test]
+#[ignore]
 fn production_rate_per_minute_at_speed_zero() {
     process_rate_per_minute(0, 0);
 }
 
 #[test]
+#[ignore]
 fn production_rate_per_minute_at_speed_one() {
     process_rate_per_minute(1, 3);
 }
 
 #[test]
+#[ignore]
 fn production_rate_per_minute_at_speed_five() {
     process_rate_per_minute(5, 16);
 }
 
 #[test]
+#[ignore]
 fn production_rate_per_minute_at_speed_eight() {
     process_rate_per_minute(8, 26);
 }
