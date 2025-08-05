@@ -8,7 +8,7 @@ pub fn production_rate_per_hour(speed: u8) -> f64 {
     } else if speed < 11 {
         0.77
     } else {
-        panic!("{} is greater than maximum allowed speed of 10!", speed)
+        panic!("{speed} is greater than maximum allowed speed of 10!")
     };
 
     rate * speed as f64 * 221.0
