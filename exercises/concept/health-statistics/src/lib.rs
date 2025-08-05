@@ -10,26 +10,29 @@ pub struct User {
 
 impl User {
     pub fn new(name: String, age: u32, weight: f32) -> Self {
-        todo!()
+        User { name, age, weight }
     }
 
     pub fn name(&self) -> &str {
-        todo!()
+        &self.name
     }
 
     pub fn age(&self) -> u32 {
-        todo!()
+        self.age
     }
 
     pub fn weight(&self) -> f32 {
-        todo!()
+        self.weight
     }
 
     pub fn set_age(&mut self, new_age: u32) {
-        todo!()
+        self.age = new_age
     }
 
     pub fn set_weight(&mut self, new_weight: f32) {
-        todo!()
+        if new_weight < 0.0 {
+            panic!("Proviced weight {} is invalid!", new_weight)
+        }
+        self.weight = new_weight
     }
 }
