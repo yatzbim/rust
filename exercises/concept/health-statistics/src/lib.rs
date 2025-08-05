@@ -31,7 +31,7 @@ impl User {
 
     pub fn set_weight(&mut self, new_weight: f32) {
         if new_weight < 0.0 {
-            panic!("Proviced weight {} is invalid!", new_weight)
+            panic!("Proviced weight {new_weight} is invalid!")
         }
         self.weight = new_weight
     }
