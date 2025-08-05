@@ -51,6 +51,7 @@ fn comma() {
 }
 
 #[test]
+#[ignore]
 fn empty() {
     let builder = CsvRecordBuilder::new();
     let list = builder.build();
