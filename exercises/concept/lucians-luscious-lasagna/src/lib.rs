@@ -1,19 +1,17 @@
 pub fn expected_minutes_in_oven() -> i32 {
-    todo!("return expected minutes in the oven")
+    40
 }
 
 pub fn remaining_minutes_in_oven(actual_minutes_in_oven: i32) -> i32 {
-    todo!(
-        "calculate remaining minutes in oven given actual minutes in oven: {actual_minutes_in_oven}"
-    )
+    std::cmp::max(expected_minutes_in_oven() - actual_minutes_in_oven, 0)
 }
 
 pub fn preparation_time_in_minutes(number_of_layers: i32) -> i32 {
-    todo!("calculate preparation time in minutes for number of layers: {number_of_layers}")
+    std::cmp::max(number_of_layers * 2, 0)
 }
 
 pub fn elapsed_time_in_minutes(number_of_layers: i32, actual_minutes_in_oven: i32) -> i32 {
-    todo!(
-        "calculate elapsed time in minutes for number of layers {number_of_layers} and actual minutes in oven {actual_minutes_in_oven}"
-    )
+    let number_of_layers = std::cmp::max(number_of_layers, 0);
+    let actual_minutes_in_oven = std::cmp::max(actual_minutes_in_oven, 0);
+    preparation_time_in_minutes(number_of_layers) + actual_minutes_in_oven
 }
