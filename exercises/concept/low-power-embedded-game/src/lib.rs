@@ -26,7 +26,7 @@ pub fn evens<T>(iter: impl Iterator<Item = T>) -> impl Iterator<Item = T> {
     let mut i = 0;
     iter.filter(move |v| {
         let res = i % 2 == 0;
-        i = i + 1;
+        i += 1;
         res
     })
 }
